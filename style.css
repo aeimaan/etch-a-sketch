@@ -1,0 +1,90 @@
+:root{
+    --title: #333;
+    --background: #ededed;
+    --button-border: #333;
+    --button: #555;
+    --button-hover: #444;
+    --button-active: #333;
+    --border: #222;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: "Roboto", sans-serif;
+    font-size: 62.5%;
+    line-height: 1.5;
+    background-color: rgb(160, 37, 37);
+}
+
+body{
+    background-color: var(--background);
+    font-size: 1rem;
+    text-align: center;
+}
+
+header{
+    padding: 2rem;
+    font-size: 3.2rem;
+    margin-top: 3rem;
+}
+
+h1{
+    line-height: 1.2;
+}
+
+.title{
+    color: rgb(160, 37, 37);
+}
+
+.container{
+    padding: 1rem;
+}
+
+.button{
+    background-color: var(--button);
+    color: var(--background);
+    margin: 1rem;
+    border: 2px solid var(--button-border);
+    padding: 1.6rem;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1.8rem;
+    outline: none;
+}
+
+.button:hover{
+    background-color: var(--button-hover);
+}
+.button:active{
+    background-color: var(--button-active);
+}
+.grid{
+    display: grid;
+    max-width: 500px;
+    min-height: 500px;
+    margin: 2rem auto;
+    border: 2px solid var(--border);
+}
+.grid-element{
+    border: 1px solid var(--border);
+    background-color: var(--background);
+}
+
+@media (max-width: 450px){
+    header{
+        font-size: 2.4rem;
+    }
+
+    .grid{
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+}
